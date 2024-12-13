@@ -15,6 +15,7 @@ export function MapNewRoute(props: MapNewRouteProps) {
 
   useEffect(() => {
     if (!map || !directionsData) {
+      console.log("--------- mapa null -----------");
       return;
     }
 
