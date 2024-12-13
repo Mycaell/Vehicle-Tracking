@@ -1,11 +1,5 @@
 services:
-  app:
-    build: .
-    volumes:
-      - .:/home/node/app
-    ports:
-      - 3000:3000
-  db:
+  mongo:
     build: ./.docker/mongodb
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
